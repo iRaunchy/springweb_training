@@ -41,7 +41,7 @@
         </plugins>
     </build>
     <scm>
-        <developerConnection>csm:git:https://iRaunchy@github.com/iRaunchy/springweb_training.git</developerConnection>
+        <developerConnection>csm:git:https://iraunchy@github.com/iRaunchy/springweb_training.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 </project>
