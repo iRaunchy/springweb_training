@@ -1,4 +1,4 @@
-package com.iraunchy.petclinic.model;
+package com.iraunchy.springwebtraining.model;
 
 import java.time.LocalDate;
 

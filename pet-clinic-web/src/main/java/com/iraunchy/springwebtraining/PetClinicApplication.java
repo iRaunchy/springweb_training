@@ -1,4 +1,4 @@
-package com.iraunchy.petclinic;
+package com.iraunchy.springwebtraining;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
