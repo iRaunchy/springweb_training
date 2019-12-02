@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.iraunchy</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>pet-clinic</name>
     <description>Pet Clinic Project</description>
 
@@ -35,12 +35,13 @@
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <scm>
         <developerConnection>csm:git:https://github.com/iRaunchy/springweb_training.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>pet-clinic-0.0.2</tag>
     </scm>
 </project>
