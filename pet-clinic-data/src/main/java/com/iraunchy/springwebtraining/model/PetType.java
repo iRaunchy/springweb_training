@@ -1,6 +1,6 @@
 package com.iraunchy.springwebtraining.model;
 
-public class PetType {
+public class PetType extends BaseEntity {
 
     String name;
 
