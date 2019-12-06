@@ -1,4 +1,4 @@
-package controllers;
+package com.iraunchy.springwebtraining.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
