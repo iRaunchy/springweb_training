@@ -1,11 +1,11 @@
 package com.iraunchy.springwebtraining.services.map;
 
 import com.iraunchy.springwebtraining.model.Vet;
-import com.iraunchy.springwebtraining.services.CrudService;
+import com.iraunchy.springwebtraining.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
@@ -30,5 +30,10 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements Crud
     @Override
     public Vet findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Vet findByLastName(String lastName) {
+        return null;
     }
 }
