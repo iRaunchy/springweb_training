@@ -2,9 +2,11 @@ package com.iraunchy.springwebtraining.services.map;
 
 import com.iraunchy.springwebtraining.model.Owner;
 import com.iraunchy.springwebtraining.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
