@@ -75,12 +75,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
+   <!--     <dependency>
             <groupId>com.iraunchy</groupId>
             <artifactId>pet-clinic-data</artifactId>
             <version>0.0.3-SNAPSHOT</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency>-->
     </dependencies>
     <build>
         <plugins>
