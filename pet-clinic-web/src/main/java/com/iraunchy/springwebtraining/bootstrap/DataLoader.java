@@ -1,6 +1,7 @@
 package com.iraunchy.springwebtraining.bootstrap;
 
 import com.iraunchy.springwebtraining.model.Owner;
+import com.iraunchy.springwebtraining.model.Pet;
 import com.iraunchy.springwebtraining.model.PetType;
 import com.iraunchy.springwebtraining.model.Vet;
 import com.iraunchy.springwebtraining.services.OwnerService;
@@ -8,6 +9,8 @@ import com.iraunchy.springwebtraining.services.PetTypeService;
 import com.iraunchy.springwebtraining.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -39,7 +42,12 @@ public class DataLoader implements CommandLineRunner {
         owner1.setAddress("123 Brickerel");
         owner1.setCity("Miami");
         owner1.setTelephone("1231245156");
-
+        Pet owner1Pet = new Pet();
+        owner1Pet.setPetType(savedDogType);
+        owner1Pet.setOwner(owner1);
+        owner1Pet.setName("Jake");
+        owner1Pet.setBirthDate(LocalDate.now());
+        owner1.getPets().add(owner1Pet);
 
         ownerService.save(owner1);
 
@@ -49,6 +57,12 @@ public class DataLoader implements CommandLineRunner {
         owner2.setAddress("123 Brickerel");
         owner2.setCity("Miami");
         owner2.setTelephone("1231245156");
+        Pet owner2Pet = new Pet();
+        owner2Pet.setPetType(savedCatType);
+        owner2Pet.setOwner(owner2);
+        owner2Pet.setName("Mursik");
+        owner2Pet.setBirthDate(LocalDate.now());
+        owner2.getPets().add(owner2Pet);
 
         ownerService.save(owner2);
 
